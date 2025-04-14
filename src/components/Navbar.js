@@ -1,0 +1,46 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Phone } from 'lucide-react';
+import logo from "../assets/images/logo.png"
+import "./Navbar.css"
+
+
+const Navbar = () => {
+  return (
+    <div>
+        <div className='nav-logo'>
+        <Link to="/">
+        <img src={logo}
+        alt='Navbar Logo'
+        />
+        </Link>
+        </div>
+        <div className='navList'>
+            <ul className='nav-list'>
+                <li>
+                <Link to="/kako-da-platam" className='nav-link'>Како да платам</Link>
+                </li>
+                <li>
+                <Link to="/opsti-uslovi" className='nav-link'>Општи услови</Link>
+                </li>
+                <li>
+                <Link to="/index#prasanja" className='nav-link'>Прашања</Link>
+                </li>
+                <li>
+                <Link to="/tarifnik" className='nav-link'>Тарифник</Link>
+                </li>
+                <li>
+                <Link to="/kontakt" className='nav-link'>Контакт</Link>
+                </li>
+            </ul>
+        </div>
+        <div className='nav-end'>
+            <Phone style={{padding:"15px", color:"#63b649", fill:"#63b649", width:"20px", height:"20px", paddingTop:"25px"}} />
+            <p id='phoneNumber'>+389 2 3243 003</p>
+            <button className="apply-button">Аплицирај</button>
+        </div>
+    </div>
+  )
+}
+
+export default Navbar

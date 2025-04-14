@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 29, 56, 0.8);
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    height: 80px;
+}
+.nav-logo img{
+    width: 150px;
+    height: 50px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 200px;
+}
+.nav-link{
+    padding-left: 35px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+li{
+    list-style: none;
+    padding-top: 10px;
+}
+.nav-end{
+    display: flex;
+    flex-direction: row;
+}
+#phoneNumber{
+    padding-top: 9px;
+    padding-right: 20px;
+}
+.apply-button {
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #63b649;
+    border: 1px solid #63b649;
+    background: transparent;
+    height: 50px;
+    margin-top: 10px;
+    padding: 0 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .apply-button:hover {
+    background-color: #63b649;
+    color: #fff;
+  }
+  
