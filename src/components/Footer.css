@@ -1,0 +1,145 @@
+.footer-container img{
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-wrapper h3{
+    font-weight: 600;
+}
+
+.footer-grid-container p,
+    .footer-container p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    align-items: left;
+}
+
+.footer-grid-container p:hover {
+    color: var(--black);
+    cursor: pointer;
+}
+
+#unchanged:hover{
+  color: var(--gray);
+  cursor: none;
+}
+#email:hover{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.footer-container .orange{
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.footer-container{
+    margin-top: 150px;
+}
+
+.footer-grid-container{
+    display: grid;
+    grid-template-columns: 3(1fr,1fr,1fr);
+}
+
+.footer-grid-container h3{
+    margin-bottom: 50px;
+}
+
+.footer-grid-container ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-grid-container ul li{
+    margin: 25px 10px;
+}
+
+.footer-grid-container button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--blue);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.endForm{
+    margin-bottom: 70px;
+}
+
+.endForm form{
+    margin-top: 20px;
+}
+
+.footer-grid-container input{
+    width: 150px;
+    height: 40px;
+}
+
+.copyright{
+   justify-content: center;
+   align-items: center;
+   margin-left: 300px;
+   margin-top: 150px;
+   color: var(--gray);
+}
+
+.copyright strong{
+    color: var(--blue);
+}
+
+.footer-container-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .icon-wrapper {
+    border: 1px solid var(--secondary);
+    border-radius: 50%;
+    background-color: var(--light);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    margin-right: 15px;
+  }
+  
+  .icon-wrapper svg {
+    color: white; 
+    width: 24px;
+    height: 24px;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+  }
+  
+  .icon-wrapper:hover {
+    background-color: var(--blue); 
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .icon-wrapper:hover svg {
+    opacity: 1; 
+  }
+  
+
+  

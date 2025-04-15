@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.navbar-wrapper {
+  width: 100%;
+  background: var(--primary-1);
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  color: var(--white);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  /* position: fixed; */
+}
+
+.nav-logo img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.nav-list {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #63b649;
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#phoneNumber {
+  margin: 0;
+  font-size: 14px;
+}
+
+.apply-button {
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  color: #63b649;
+  border: 1px solid #63b649;
+  background: transparent;
+  height: 40px;
+  padding: 0 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #63b649;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-end {
+    flex-direction: column;
+  }
+}
