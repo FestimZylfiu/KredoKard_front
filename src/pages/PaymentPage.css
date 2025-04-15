@@ -1,0 +1,25 @@
+.payment-container{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.payment-text-container{
+    margin-left: 130px;
+}
+
+.payment-text-container h3{
+    font-size: 44px;
+    font-weight: 400;
+    color: var(--primary-1);
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.payment-text-container p{
+    font-size: 17px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
