@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../components/Main.css"
 
 import "./HomePage.css"
@@ -7,6 +7,12 @@ import kredo2 from "../assets/images/kredo-2.png"
 
 
 function HomePage() {
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+    const toggleDropdown = (id) => {
+    setOpenDropdown(openDropdown === id ? null : id);
+    };
+
   return (
     <div className='home-container'>
     <div className='container'>
@@ -32,6 +38,7 @@ function HomePage() {
         </div>
       </div>
     </div>
+
     <div className='container'>
       <div className='picture-container'>
         <img src={kredo2} alt='Kredo 2 Img' />
@@ -48,6 +55,77 @@ function HomePage() {
 
       </div>
     </div>
+
+    <div className="container">
+  <div className="dropdown-container">
+    <h3 className="faq-title">Често поставувани прашања</h3>
+
+    <div className="dropdown">
+      <button
+        className="dropdown-toggle"
+        onClick={() => toggleDropdown("faq1")}
+        aria-expanded={openDropdown === "faq1"}
+      >
+        <span className="symbol">ᐯ</span>
+        <span>Како да аплицирам?</span>
+      </button>
+      <div className={`dropdown-menu ${openDropdown === "faq1" ? "show" : ""}`}>
+        <p>
+          Може да аплицирате во нашата експозитура или онлајн<br/> на нашиот веб-сајт www.kredokard.mk каде што може да<br/> го изберете потребниот износ и рок на отплата.<br/> Вработено лице во Кредо Кард Мк ќе ве контактира во<br/> најбрз можен рок.
+        </p>
+      </div>
+      <hr className="divider" />
+    </div>
+
+    <div className="dropdown">
+      <button
+        className="dropdown-toggle"
+        onClick={() => toggleDropdown("faq2")}
+        aria-expanded={openDropdown === "faq2"}
+      >
+        <span className="symbol">ᐯ</span>
+        <span>Кои документи се потребни?</span>
+      </button>
+      <div className={`dropdown-menu ${openDropdown === "faq2" ? "show" : ""}`}>
+        <p>За разгледување на Вашата апликација за кредит треба<br/> да доставите само валидна лична карта или пасош и<br/> бројот на вашатата здравствена картичка.</p>
+      </div>
+      <hr className="divider" />
+    </div>
+
+    <div className="dropdown">
+      <button
+        className="dropdown-toggle"
+        onClick={() => toggleDropdown("faq3")}
+        aria-expanded={openDropdown === "faq3"}
+      >
+         <span className="symbol">ᐯ</span>
+        <span>За колку време ќе добијам одговор по аплицирањето?</span>
+      </button>
+      <div className={`dropdown-menu ${openDropdown === "faq3" ? "show" : ""}`}>
+        <p>Вработено лице во Кредо Кард ве контактира во најбрз<br/> можен рок откако ќе аплицирате.</p>
+      </div>
+      <hr className="divider" />
+    </div>
+
+
+    <div className="dropdown">
+      <button
+        className="dropdown-toggle"
+        onClick={() => toggleDropdown("faq4")}
+        aria-expanded={openDropdown === "faq4"}
+      >
+         <span className="symbol">ᐯ</span>
+        <span>За колку време ќе добијам одговор по аплицирањето?</span>
+      </button>
+      <div className={`dropdown-menu ${openDropdown === "faq4" ? "show" : ""}`}>
+        <p>Исплатата се врши веднаш по потпшувањето на <br/> договорот.</p>
+      </div>
+      <hr className="divider" />
+    </div>
+  </div>
+</div>
+=======
+
     <div className='gray-container'>
   <div className='container'>
     <div className='gray-text'>
