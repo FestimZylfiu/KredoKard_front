@@ -1,7 +1,10 @@
 import React from 'react'
 import "../components/Main.css"
+
 import "./HomePage.css"
 import kredo2 from "../assets/images/kredo-2.png"
+=======
+
 
 function HomePage() {
   return (
