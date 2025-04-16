@@ -5,16 +5,23 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
 import PaymentPage from './pages/PaymentPage';
+
 import TermsPage from './pages/TermsPage';
+=======
+
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Footer />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/kako-da-platam' element={<PaymentPage />} />
+
         <Route path='/opsti-uslovi' element={<TermsPage />} />
+=======
+
       </Routes>
       <Footer />
     </Router>
