@@ -45,6 +45,15 @@ function HomePage() {
 
       </div>
     </div>
+    <div className='gray-container'>
+  <div className='container'>
+    <div className='gray-text'>
+      <h3>Кредо Кард е Вашиот нов партнер <br /> за финансиски средства.</h3>
+      <p>Аплицирајте ОНЛАЈН до 120.000 ден. и подигнете ги потребните средства брзо и лесно.<br /> Одобрувањето е во рок од само 15 минути.</p>
+    </div>
+    <button className='action-button'>Аплицирај</button>
+  </div>
+</div>
     </div>
 
   )
