@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import Footer from './components/Footer';
 import PaymentPage from './pages/PaymentPage';
 import TermsPage from './pages/TermsPage';
+import TariffPage from './pages/TariffPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/kako-da-platam' element={<PaymentPage />} />
         <Route path='/opsti-uslovi' element={<TermsPage />} />
+        <Route path='/tarifnik' element={<TariffPage />} />
       </Routes>
       <Footer />
     </Router>
