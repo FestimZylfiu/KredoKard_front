@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import "../components/Main.css"
+
 import "./HomePage.css"
 import kredo2 from "../assets/images/kredo-2.png"
+
 import { useLocation } from 'react-router-dom';
+=======
+=======
+
+
 
 function HomePage() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -66,8 +72,14 @@ function HomePage() {
 
       </div>
     </div>
+
     <div  className="container">
   <div id="prasanja" className="dropdown-container">
+=======
+
+    <div className="container">
+  <div className="dropdown-container">
+
     <h3 className="faq-title">Често поставувани прашања</h3>
 
     <div className="dropdown">
@@ -134,6 +146,8 @@ function HomePage() {
     </div>
   </div>
 </div>
+=======
+
     <div className='gray-container'>
   <div className='container'>
     <div className='gray-text'>
