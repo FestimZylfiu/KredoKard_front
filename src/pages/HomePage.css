@@ -10,8 +10,11 @@
 }
 
 .before-numbers{
-    transform: translateX(30%);
-    margin: 60px 0;
+    margin: 60px 0px;
+    padding-right: 360px;
+    display: flex;
+    justify-content: center;
+    margin-left: 280px;
 }
 
 .before-numbers span{
@@ -22,13 +25,15 @@
     font-weight: 900;
     transform: translateX(300%);
     margin-bottom: 10px;
+    position: relative;
+    left: 60px;
 }
 
 .before-numbers h3{
     font-size: 44px;
     font-weight: 400;
     color: var(--primary-1);
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .circle{

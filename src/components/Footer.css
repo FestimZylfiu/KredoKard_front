@@ -14,14 +14,39 @@
 .footer-wrapper h3{
     font-weight: 600;
 }
-
-.footer-grid-container p,
     .footer-container p{
     margin-top: 10px;
     font-size: 14px;
     font-weight: 400;
     color: var(--gray);
     align-items: left;
+}
+
+.footer-grid-container ul li{
+    margin-top: 25px;
+}
+
+.footer-grid-container p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    align-items: left;
+    text-decoration: none;
+}
+
+.link1{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    align-items: left;
+    text-decoration: none;
+}
+
+.link1:hover{
+    color: var(--black);
+    cursor: pointer; 
 }
 
 .footer-grid-container p:hover {
@@ -62,7 +87,7 @@
     text-decoration: none;
 }
 
-.footer-grid-container ul li{
+.footer-grid-container ul p{
     margin: 25px 10px;
 }
 
@@ -141,6 +166,18 @@
   .icon-wrapper:hover svg {
     opacity: 1; 
   }
+
+  .endForm button{
+    cursor: pointer;
+  }
+
+  .toast-error-custom { 
+    font-weight: bold; 
+    font-family: "Unbounded", sans-serif;
+    color: #000;
+    font-size: 15px;
+  }
+  
   
 
   
