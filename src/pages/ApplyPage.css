@@ -1,0 +1,22 @@
+.apply-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: right;
+    margin-top: 100px;
+    gap: 30px;
+    padding-left: 68px;
+}
+
+.apply-container h1{
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.apply-container p{
+    font-size: 14px;
+    color: var(--light-gray);
+    margin-bottom: 10px;
+}
