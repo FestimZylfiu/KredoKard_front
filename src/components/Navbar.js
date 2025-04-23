@@ -18,7 +18,7 @@ const Navbar = () => {
         <ul className="nav-list">
           <li><Link to="/kako-da-platam" className="nav-link">Како да платам</Link></li>
           <li><Link to="/opsti-uslovi" className="nav-link">Општи услови</Link></li>
-          <li><Link to="/index#prasanja" className="nav-link">Прашања</Link></li>
+          <li><Link to="/#prasanja" className="nav-link">Прашања</Link></li>
           <li><Link to="/tarifnik" className="nav-link">Тарифник</Link></li>
           <li><Link to="/kontakt" className="nav-link">Контакт</Link></li>
         </ul>

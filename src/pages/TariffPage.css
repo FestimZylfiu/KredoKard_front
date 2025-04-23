@@ -1,0 +1,111 @@
+.tariff-container {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: "Arial", sans-serif;
+    color: #222;
+    line-height: 1.6;
+    padding: 0 20px;
+    margin-top: 130px;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: var(--primary-1);
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 20px 0 10px;
+    color: var(--primary-1);
+    border-top: 1px solid var(--gray-2);
+  }
+  
+  .section-text {
+    font-size: 14px;
+    margin: 8px 0;
+    width: 100%;
+    color: var(--primary-1);
+    border-top: 1px solid var(--gray-2);
+  }
+  
+  .tariff-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+  
+  .tariff-table thead th {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 0;
+    border-top: 1px solid var(--gray-2);
+    color: var(--primary-1);
+  }
+  
+  .tariff-table tbody td {
+    font-size: 14px;
+    padding: 12px 0;
+    vertical-align: top;
+    border-top: 1px solid var(--gray-2);
+  }
+  
+  .tariff-table tbody tr td:last-child {
+    width: 120px;
+    text-align: left;
+    white-space: nowrap;
+    color: var(--primary-1);
+    font-weight: 500;
+  }
+  
+  .footer-note {
+    font-size: 14px;
+    color: var(--gray);
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 1.5;
+  }
+  
+  .tariff-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  .text-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  .text-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+  }
+
+  .left-mini-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
+
+  #right-mini{
+    position: relative;
+    left: 20px;
+  }
+
+  #right-mini-2{
+    position: relative;
+    left: 20px;
+  }
+  
+  
+  

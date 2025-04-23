@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../components/Main.css"
 import "./HomePage.css"
 import kredo2 from "../assets/images/kredo-2.png"
+import { useLocation } from 'react-router-dom';
 
 function HomePage() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -9,6 +10,19 @@ function HomePage() {
     const toggleDropdown = (id) => {
     setOpenDropdown(openDropdown === id ? null : id);
     };
+
+    const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 0); 
+      }
+    }
+  }, [location]);
 
   return (
     <div className='home-container'>
@@ -52,8 +66,8 @@ function HomePage() {
 
       </div>
     </div>
-    <div className="container">
-  <div className="dropdown-container">
+    <div  className="container">
+  <div id="prasanja" className="dropdown-container">
     <h3 className="faq-title">Често поставувани прашања</h3>
 
     <div className="dropdown">
