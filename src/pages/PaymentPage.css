@@ -23,3 +23,53 @@
     color: var(--gray);
     margin-bottom: 20px;
 }
+
+
+@media (max-width: 1024px) {
+    .payment-container {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .payment-text-container {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .payment-text-container h3 {
+        font-size: 32px;
+    }
+
+    .payment-text-container p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .payment-container {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding: 0 15px;
+    }
+
+    .payment-text-container h3 {
+        font-size: 24px;
+    }
+
+    .payment-text-container p {
+        font-size: 14px;
+    }
+
+    .payment-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+=======
+

@@ -10,7 +10,10 @@ import Testimonials from '../components/Testimonials';
 import Slider from "./Slider"
 
 
+
+
 import Slider from "./Slider"
+
 
 
 
@@ -157,9 +160,13 @@ function HomePage() {
 <Testimonials/>
 
 <Slider/>
+
+
+<Slider/>
 =======
 
 <Slider/>
+
 
 
 
