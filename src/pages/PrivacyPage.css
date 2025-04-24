@@ -94,3 +94,71 @@
     margin-bottom: 30px;
     margin-left: 170px;
 }
+
+@media (max-width: 1024px) {
+    .privacy-container {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    .terms {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .terms h3 {
+        font-size: 32px;
+    }
+
+    #second {
+        font-size: 20px;
+    }
+
+    .terms p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .terms .orange p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .privacy-container {
+        margin-top: 60px;
+        padding: 0 15px;
+        align-items: center;
+    }
+
+    .terms {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .terms h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #second {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .terms p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    .terms .orange p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .privacy-list {
+        padding-left: 20px;
+    }
+}
