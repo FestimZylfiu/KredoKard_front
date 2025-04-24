@@ -3,6 +3,7 @@ import "../components/Main.css"
 import "./HomePage.css"
 import kredo2 from "../assets/images/kredo-2.png"
 import { useLocation } from 'react-router-dom';
+import Testimonials from '../components/Testimonials';
 
 function HomePage() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -134,6 +135,7 @@ function HomePage() {
     </div>
   </div>
 </div>
+<Testimonials/>
     <div className='gray-container'>
   <div className='container'>
     <div className='gray-text'>
