@@ -1,0 +1,32 @@
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 0;
+  box-sizing: border-box;
+  margin-top: 80px;
+  margin-bottom: -50px;
+}
+
+.logo-slider {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 10px;
+  cursor: grab;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.logo-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-logo {
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
