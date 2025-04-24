@@ -7,6 +7,8 @@ import kredo2 from "../assets/images/kredo-2.png"
 import { useLocation } from 'react-router-dom';
 
 import Testimonials from '../components/Testimonials';
+import Slider from "./Slider"
+
 
 import Slider from "./Slider"
 
@@ -155,6 +157,10 @@ function HomePage() {
 <Testimonials/>
 
 <Slider/>
+=======
+
+<Slider/>
+
 
 
 
