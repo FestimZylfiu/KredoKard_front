@@ -38,3 +38,55 @@
 #text-black12{
     color: var(--black);
 }
+
+@media (max-width: 600px) {
+    .cookie-page-container {
+      width: 100%;
+      margin: 10px auto;
+      padding: 5px;
+    }
+  
+    .cookie-page-terms {
+      padding: 15px;
+    }
+  
+    .cookie-page-terms h3 {
+      font-size: 1.2rem;
+    }
+  
+    .cookie-page-terms p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .cookie-page-container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .cookie-page-terms h3 {
+      font-size: 1.3rem;
+    }
+  
+    .cookie-page-terms p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .cookie-page-container {
+      width: 80%;
+    }
+  
+    .cookie-page-privacy-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .cookie-page-terms {
+      width: 48%; 
+      flex: 0 0 48%;
+    }
+  }
