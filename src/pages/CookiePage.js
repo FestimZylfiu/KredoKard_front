@@ -1,5 +1,13 @@
 import React, { useEffect } from 'react'
 import '../components/Main.css'
+
+=======
+
+
+
+import './PrivacyPage.css'
+
+
 import './TermsPage.css'
 import "./CookiePage.css"
 import AOS from 'aos';
