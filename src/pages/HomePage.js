@@ -1,24 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import "../components/Main.css"
-
 import "./HomePage.css"
 import kredo2 from "../assets/images/kredo-2.png"
-
 import { useLocation } from 'react-router-dom';
-
 import Testimonials from '../components/Testimonials';
 import Slider from "./Slider"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-
-
-
-
-import Slider from "./Slider"
-
-
-
-
 
 
 
@@ -92,19 +80,9 @@ function HomePage() {
 
       </div>
     </div>
-
     <div  className="container">
   <div id="prasanja" className="dropdown-container">
-
     <h3 className="faq-title" data-aos="zoom-out-left">Често поставувани прашања</h3>
-=======
-=======
-
-    <div className="container">
-  <div className="dropdown-container">
-
-    <h3 className="faq-title">Често поставувани прашања</h3>
-
 
     <div className="dropdown" data-aos="zoom-in-up" data-aos-delay="100">
       <button
@@ -170,22 +148,8 @@ function HomePage() {
     </div>
   </div>
 </div>
-
 <Testimonials/>
-
 <Slider/>
-
-
-<Slider/>
-=======
-
-<Slider/>
-
-
-
-
-
-
     <div className='gray-container'>
   <div className='container'>
     <div className='gray-text' data-aos="fade-right">
