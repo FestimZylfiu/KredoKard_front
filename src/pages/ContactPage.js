@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../components/Main.css"
 import "./ContactPage.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const ContactPage = () => {
+   useEffect(()=> {
+              AOS.init({
+                duration: 1000,    
+                once: true,         
+                offset: 50         
+              });
+            },[])
   return (
     <div className='container'>
         <div className='contact-container'>
         <div className='text-container'>
-          <h3>Контакт</h3>
+          <h3 data-aos="fade-up">Контакт</h3>
           <ul className='ul-circle'>
-            <li>Телефон: +389 2 3243 003</li>
-            <li>Адреса: ул. Костурски Херои бр.47 – Скопје</li>
-            <li>E-mail: fdkredokard@gmail.com</li>
+            <li data-aos="fade-left" data-aos-delay="100">Телефон: +389 2 3243 003</li>
+            <li data-aos="fade-left" data-aos-delay="200">Адреса: ул. Костурски Херои бр.47 – Скопје</li>
+            <li data-aos="fade-left" data-aos-delay="300">E-mail: fdkredokard@gmail.com</li>
           </ul>
         </div>
         <iframe
@@ -22,6 +31,7 @@ const ContactPage = () => {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        data-aos="fade-right"
     />
 
         </div>

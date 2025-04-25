@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../components/Main.css'
 import './PrivacyPage.css'
 import './TermsPage.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const PrivacyPage = () => {
+   useEffect(()=> {
+                AOS.init({
+                  duration: 1000,    
+                  once: false,         
+                  offset: 50         
+                });
+                 AOS.refresh();
+              },[])
   return (
     <div className='container'>
       <div className='privacy-container'>
         <div className='terms'>
-        <h3>Политика на приватност и заштита на личните податоци</h3>
+        <h3 data-aos="fade-up"
+             data-aos-duration="3000">Политика на приватност и заштита на личните податоци</h3>
           <p>Врз основа на одредбите од Законот за заштита на личните податоци („Службен весник на РСМ“ бр. 42/20), раководството на ФД КРЕДО КАРД ДОО, донесе.</p>
         </div>
         <div className='terms'>
