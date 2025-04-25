@@ -5,6 +5,8 @@ import kredo2 from "../assets/images/kredo-2.png"
 import { useLocation } from 'react-router-dom';
 import Testimonials from '../components/Testimonials';
 import Slider from "./Slider"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 function HomePage() {
@@ -27,25 +29,33 @@ function HomePage() {
     }
   }, [location]);
 
+  useEffect(()=> {
+    AOS.init({
+      duration: 1000,    
+      once: true,         
+      offset: 50         
+    });
+  },[])
+
   return (
     <div className='home-container'>
     <div className='container'>
        <div className='before-numbers'>
        <span></span>
-       <h3>Како да земам кредит?</h3>
+       <h3 data-aos="fade-up">Како да земам кредит?</h3>
        </div>
       <div className='number-container'>
-        <div className='number-content-container'>
+        <div className='number-content-container' data-aos="fade-up">
           <div className='circle'>01</div>
           <h3>Апликација</h3>
           <p>Изберете износ и рок на отплата и внесете <br /> ги потребните податоци.</p>
         </div>
-        <div className='number-content-container'>
+        <div className='number-content-container' data-aos="fade-up">
           <div className='circle'>02</div>
           <h3>Одобрување</h3>
           <p>За 15 минути ќе бидете контактирани од<br /> наш кредитен референт.</p>
         </div>
-        <div className='number-content-container'>
+        <div className='number-content-container' data-aos="fade-up">
           <div className='circle'>03</div>
           <h3>Исплата</h3>
           <p>Средствата ќе бидат исплатени на Вашата<br /> трансакциска сметка.</p>
@@ -55,15 +65,15 @@ function HomePage() {
 
     <div className='container'>
       <div className='picture-container'>
-        <img src={kredo2} alt='Kredo 2 Img' />
+        <img src={kredo2} alt='Kredo 2 Img' data-aos="fade-right" />
         <div className='text-container'>
-          <h3>Зошто да не изберете<br /> нас?</h3>
+          <h3 data-aos="fade-up">Зошто да не изберете<br /> нас?</h3>
           <ul className='ul-circle'>
-            <li>Брзи кредити до 120.000 мкд</li>
-            <li>Одобрување за 15 минути!</li>
-            <li>Најповолни услови</li>
-            <li>Без скриени трошоци</li>
-            <li>24/7 достапност</li>
+            <li data-aos="fade-left" data-aos-delay="100">Брзи кредити до 120.000 мкд</li>
+            <li data-aos="fade-left" data-aos-delay="200">Одобрување за 15 минути!</li>
+            <li data-aos="fade-left" data-aos-delay="300">Најповолни услови</li>
+            <li data-aos="fade-left" data-aos-delay="400">Без скриени трошоци</li>
+            <li data-aos="fade-left" data-aos-delay="500">24/7 достапност</li>
           </ul>
         </div>
 
@@ -71,9 +81,9 @@ function HomePage() {
     </div>
     <div  className="container">
   <div id="prasanja" className="dropdown-container">
-    <h3 className="faq-title">Често поставувани прашања</h3>
+    <h3 className="faq-title" data-aos="zoom-out-left">Често поставувани прашања</h3>
 
-    <div className="dropdown">
+    <div className="dropdown" data-aos="zoom-in-up" data-aos-delay="100">
       <button
         className="dropdown-toggle"
         onClick={() => toggleDropdown("faq1")}
@@ -90,7 +100,7 @@ function HomePage() {
       <hr className="divider" />
     </div>
 
-    <div className="dropdown">
+    <div className="dropdown" data-aos="zoom-in-up" data-aos-delay="200">
       <button
         className="dropdown-toggle"
         onClick={() => toggleDropdown("faq2")}
@@ -105,7 +115,7 @@ function HomePage() {
       <hr className="divider" />
     </div>
 
-    <div className="dropdown">
+    <div className="dropdown" data-aos="zoom-in-up" data-aos-delay="300">
       <button
         className="dropdown-toggle"
         onClick={() => toggleDropdown("faq3")}
@@ -121,7 +131,7 @@ function HomePage() {
     </div>
 
 
-    <div className="dropdown">
+    <div className="dropdown" data-aos="zoom-in-up" data-aos-delay="400">
       <button
         className="dropdown-toggle"
         onClick={() => toggleDropdown("faq4")}
@@ -141,11 +151,11 @@ function HomePage() {
 <Slider/>
     <div className='gray-container'>
   <div className='container'>
-    <div className='gray-text'>
+    <div className='gray-text' data-aos="fade-right">
       <h3>Кредо Кард е Вашиот нов партнер <br /> за финансиски средства.</h3>
       <p>Аплицирајте ОНЛАЈН до 120.000 ден. и подигнете ги потребните средства брзо и лесно.<br /> Одобрувањето е во рок од само 15 минути.</p>
     </div>
-    <button className='action-button'>Аплицирај</button>
+    <button data-aos="fade-up" className='action-button'>Аплицирај</button>
   </div>
 </div>
     </div>

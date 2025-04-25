@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../components/Main.css'
-
 import './TermsPage.css'
 import "./CookiePage.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const CookiePage = () => {
+     useEffect(()=> {
+                  AOS.init({
+                    duration: 1000,    
+                    once: true,         
+                    offset: 50         
+                  });
+                },[])
   return (
     <div className='container'>
       <div className='privacy-container'>
         <div className='terms'>
-        <h3>Политика на колачиња</h3>
+        <h3 data-aos="fade-up"
+             data-aos-duration="3000">Политика на колачиња</h3>
           <p>Оваа Политика ги објаснува категориите колачиња кои ги користиме, која е нивната намена, на кој начин може да ги измените вашите претпочитани опции и ги објаснува технологиите кои ги поставуваме за прибирање податоци поврзани со користењето на нашата веб-страница и нашата комуникација преку електронска пошта (e-mail).</p>
           <p>Овие технологии, кои се користат скоро кај секоја веб-страница и се дел од речиси секоја рекламна e-mail порака испратена преку Интернет, се познати под името „колачиња“ и „веб-патокази“.</p>
         </div>

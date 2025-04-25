@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./TariffPage.css";
 import "../components/Main.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const TariffPage = () => {
+  useEffect(()=> {
+            AOS.init({
+              duration: 1000,    
+              once: true,         
+              offset: 50         
+            });
+          },[])
   return (
     <div className="container">
       <div className="tariff-container">
-        <h2 className="title">Тарифник на услуги на ФД Кредо Кард</h2>
+        <h2 data-aos="fade-up"
+          data-aos-duration="3000" className="title">Тарифник на услуги на ФД Кредо Кард</h2>
 
         <section className="section">
           <h3 className="section-title">1.Трошоци за кредитот</h3>

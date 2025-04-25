@@ -1,8 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Slider.css';
 import img1 from "../assets/images/kredo-7.png";
 import img2 from "../assets/images/kredo-8.png";
 import img3 from "../assets/images/kredo-9.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Slider = () => {
   const sliderRef = useRef(null);
@@ -40,8 +42,16 @@ const Slider = () => {
     sliderRef.current.scrollLeft = scrollLeft.current - walk;
   };
 
+   useEffect(()=> {
+      AOS.init({
+        duration: 1000,    
+        once: true,         
+        offset: 50         
+      });
+    },[])
+
   return (
-    <div className="slider-container">
+    <div className="slider-container" data-aos="zoom-out-up">
       <div
         className="logo-slider draggable"
         ref={sliderRef}
