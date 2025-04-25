@@ -200,3 +200,46 @@
   .form-details{
     display: block;
   }
+
+  @media (max-width: 768px) {
+    .form-title {
+      font-size: 32px;
+      transform: translateY(40px);
+    }
+  
+    .credit-form-container {
+      transform: none;
+      margin-top: 40px;
+    }
+  
+    .primary-button,
+    .input-long,
+    .input-short {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .form-actions {
+      flex-direction: column;
+    }
+  
+    .form-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-title {
+      font-size: 26px;
+    }
+  
+    .container-form {
+      padding: 20px 10px;
+    }
+
+    .range-slider{
+      width: 250px;
+    }
+  }
