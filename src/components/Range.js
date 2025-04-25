@@ -5,7 +5,6 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-
 const RangeComponent = () => {
   const [amount, setAmount] = useState(5000);
   const [term, setTerm] = useState(24);
@@ -81,9 +80,6 @@ const RangeComponent = () => {
   };
 
   
-
-const RangeComponent = () => {
-
  
   return (
     <div className='container-form'>
@@ -92,7 +88,6 @@ const RangeComponent = () => {
         <h2 className="form-title">Кредити од<br /> 7.000 до<br /> 120.000 мкд</h2>
       </div>
       <div className="credit-form-container">
-
         <form onSubmit={handleSubmit} className="credit-form">
           <div className="form-group">
             <h1>АПЛИЦИРАЈ ВЕДНАШ</h1>
@@ -104,21 +99,11 @@ const RangeComponent = () => {
               max={maxAmount}
               value={amount}
               onChange={handleAmountChange}
-
-        <form className="credit-form">
-          <div className="form-group">
-            <h1>АПЛИЦИРАЈ ВЕДНАШ</h1>
-            <label htmlFor="amount">Износ: мкд</label>
-            <input
-              type="range"
-              id="amount"
-
               className="range-slider"
             />
           </div>
 
           <div className="form-group">
-
             <label htmlFor="term">Рок: {term} месеци</label>
             <input
               type="range"
@@ -127,12 +112,6 @@ const RangeComponent = () => {
               max={maxTerm}
               value={term}
               onChange={handleTermChange}
-
-            <label htmlFor="term">Рок: месеци</label>
-            <input
-              type="range"
-              id="term"
-
               className="range-slider"
             />
           </div>
@@ -140,19 +119,11 @@ const RangeComponent = () => {
           <div className="payment-details">
             <div className="detail-row">
               <span>Износ на рата:</span>
-
               <span>{Number(monthlyPayment).toLocaleString()} мкд</span>
             </div>
             <div className="detail-row">
               <span>СВТ (%):</span>
               <span>{apr}</span>
-
-              <span> мкд</span>
-            </div>
-            <div className="detail-row">
-              <span>СВТ (%):</span>
-              <span></span>
-
             </div>
           </div>
 
@@ -161,11 +132,8 @@ const RangeComponent = () => {
               type="number"
               name="phoneNumber"
               placeholder="Телефонски број"
-
               value={phoneNumber}
               onChange={handleChange}
-
-
               className='input-long'
             />
 
@@ -173,10 +141,8 @@ const RangeComponent = () => {
               type="email"
               name="email"
               placeholder="Емаил адреса"
-
               value={email}
-
-
+              onChange={handleChange}
               className='input-long'
             />
 
@@ -184,11 +150,8 @@ const RangeComponent = () => {
               type="text"
               name="firstName"
               placeholder="Име"
-
               value={firstName}
               onChange={handleChange}
-
-
               className='input-short'
             />
 
@@ -196,21 +159,14 @@ const RangeComponent = () => {
               type="text"
               name="lastName"
               placeholder="Презиме"
-
               value={lastName}
               onChange={handleChange}
-
-
               className='input-short'
             />
           </div>
 
           <div className="form-actions">
-
             <button type="submit" className="primary-button">Аплицирај</button>
-
-            <button className="primary-button">Аплицирај</button>
-
           </div>
         </form>
       </div>
@@ -220,3 +176,4 @@ const RangeComponent = () => {
 
 
 export default RangeComponent;
+
