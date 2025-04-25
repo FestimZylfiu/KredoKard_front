@@ -1,20 +1,48 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Phone } from 'lucide-react'
-import logo from "../assets/images/logo.png"
-import "./Navbar.css"
-import "./Main.css"
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Phone } from 'lucide-react';
+import logo from "../assets/images/logo.png";
+import "./Navbar.css";
+import "./Main.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Navbar = () => {
+  const [sticky, setSticky] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setSticky(true); 
+    } else {
+      setSticky(false); 
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+   useEffect(()=> {
+      AOS.init({
+        duration: 1000,    
+        once: true,         
+        offset: 50         
+      });
+    },[])
+
   return (
-    <div className="navbar-wrapper">
+    <div className={`navbar-wrapper ${sticky ? 'sticky' : ''}`}>
       <div className="container navbar-container">
         <div className="nav-logo">
           <Link to="/">
             <img src={logo} alt="Navbar Logo" />
           </Link>
         </div>
-        
+
         <ul className="nav-list">
           <li><Link to="/kako-da-platam" className="nav-link">Како да платам</Link></li>
           <li><Link to="/opsti-uslovi" className="nav-link">Општи услови</Link></li>
@@ -30,8 +58,9 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
+
 
