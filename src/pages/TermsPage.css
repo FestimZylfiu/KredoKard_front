@@ -32,3 +32,64 @@
     margin-bottom: 30px;
     margin-left: 170px;
 }
+
+@media (max-width: 1024px) {
+    .terms-container {
+        margin-top: 100px;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .terms {
+        margin-left: 0;
+        max-width: 700px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .terms h3 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .terms .orange p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .terms p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .terms-container {
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+
+    .terms {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: left;
+        margin-bottom: 20px;
+        margin-right: 150px;
+        width: 250px;
+    }
+
+    .terms h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .terms .orange p {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .terms p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
