@@ -7,6 +7,7 @@ import Testimonials from '../components/Testimonials';
 import Slider from "./Slider"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import Range from '../components/Range';
 
 
 
@@ -40,6 +41,7 @@ function HomePage() {
 
   return (
     <div className='home-container'>
+      <Range />
     <div className='container'>
        <div className='before-numbers'>
        <span></span>
