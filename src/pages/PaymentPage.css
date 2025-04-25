@@ -24,7 +24,6 @@
     margin-bottom: 20px;
 }
 
-
 @media (max-width: 1024px) {
     .payment-container {
         flex-direction: column;
@@ -71,5 +70,4 @@
         border-radius: 8px;
     }
 }
-=======
 
