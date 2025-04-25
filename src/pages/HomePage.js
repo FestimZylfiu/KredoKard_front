@@ -10,6 +10,7 @@ import 'aos/dist/aos.css'
 import Range from '../components/Range';
 
 
+
 function HomePage() {
   const [openDropdown, setOpenDropdown] = useState(null);
 
